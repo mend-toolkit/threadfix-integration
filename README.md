@@ -8,7 +8,15 @@
 ## Pre-requisites 
 * JDK 17
 
-# Usage Example
+## Installation and Execution from GitHub:
+- Install pre-requisites above
+- Download `ThreadFix.jar` from the most recent tagged release.
+- Execute as shown below
+```shell
+curl -LJO https://github.com/mend-toolkit/threadfix-integration/releases/latest/download/ThreadFix.jar
+```
+
+## Usage Examples
 Regarding accessing API's, it's best to use a Mend Service User.  The MendURL auto appends the additional API URL, so you only need to provide the prefix portion: https://saas.whitesourcesoftware.com
 
 There are two approaches - you can either specify the Threadfix Application ID or provide a Threadfix ProjectName.  Specifying "ProjectName" will lookup the Application ID.  If the application does not exist, it will create the application in Threadfix and populate with data.
